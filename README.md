@@ -1,5 +1,6 @@
 # UdacityProj6FeedReaderTestingUsingJasmin
-udacity Front-End Web Developer Nanodegree, Project: Feed Reader Testing with Jasmine. For more details see project's [template and requirements](https://github.com/udacity/frontend-nanodegree-feedreader)
+udacity Front-End Web Developer Nanodegree, Project: Feed Reader Testing with Jasmine. 
++ For more details see project's [template and requirements](https://github.com/udacity/frontend-nanodegree-feedreader)
 
 ## RSS FeedReader test
 + [Online](https://sasokuncic.github.io/UdacityProj6FeedReaderTestingUsingJasmin/)
