@@ -24,7 +24,7 @@ var allFeeds = [
         name: 'Računalniške novice (Slovenian)',
         url: 'https://www.racunalniske-novice.com/rss-novice/'
     }, {
-        name2: 'digisvet (Slovenian)',
+        name: 'digisvet (Slovenian)',
         url: 'https://siol.net/feeds/section/digisvet'
     }
 ];
