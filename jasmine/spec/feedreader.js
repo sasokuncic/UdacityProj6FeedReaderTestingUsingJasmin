@@ -1,5 +1,7 @@
 /* feedreader.js
- *
+ * Author: Sašo Kunčič
+ * Description: Udacity FEWD Nanodegree
+ * 
  * This is the spec file that Jasmine will read and contains
  * all of the tests that will be run against your application.
  */
@@ -89,8 +91,8 @@ $(function() {
 
         it('feed loaded with at least a single feed entry', function() {
             let feedEntry = $('.feed .entry');
-            console.log('Initial Entries: '+ feedEntry[0].innerHTML);
-            console.log('Initial Entries: '+ feedEntry[1].innerHTML);
+            // console.log('Initial Entries: '+ feedEntry[0].innerHTML);
+            // console.log('Initial Entries: '+ feedEntry[1].innerHTML);
             expect(feedEntry.length).toBeGreaterThan(0);
         });
     });
@@ -108,14 +110,14 @@ $(function() {
         beforeEach(function(done){
             loadFeed(1, done);
             firstFeedEntry = $('.feed .entry');
-            console.log('New Feed Selection: '+ firstFeedEntry[0].innerHTML);
+            // console.log('New Feed Selection: '+ firstFeedEntry[0].innerHTML);
             loadFeed(2, done);
 
         });
 
         it('new feed differs from the old one', function() {
             secondFeedEntry = $('.feed .entry');
-            console.log('New Feed Selection: '+ secondFeedEntry[0].innerHTML);
+            // console.log('New Feed Selection: '+ secondFeedEntry[0].innerHTML);
             expect(firstFeedEntry[0].innerHTML).not.toBe(secondFeedEntry[0].innerHTML);
         });
     })
