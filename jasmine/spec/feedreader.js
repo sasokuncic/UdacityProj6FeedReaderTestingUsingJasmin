@@ -69,15 +69,21 @@ $(function() {
         let secondFeedEntry = '';
 
         beforeEach(function(done){
-            loadFeed(0);
-            firstFeedEntry = $('.feed .entry').html();
-            // console.log('New Feed Selection: '+ firstFeedEntry);
-            loadFeed(1, done);
+            // callback for the first feed
+            loadFeed(0, function(){
+                firstFeedEntry = $('.feed .entry').html();
+                // console.log('New Feed Selection: '+ firstFeedEntry);
+                // nested callback function for the second feed
+                loadFeed(1, function(){
+                    secondFeedEntry = $('.feed .entry').html();
+                    // console.log('New Feed Selection: '+ secondFeedEntry);
+                    // allow jasmine to start testing expectations
+                    done();
+                })
+            });
         });
 
         it('new feed differs from the old one', function() {
-            secondFeedEntry = $('.feed .entry').html();
-            // console.log('New Feed Selection: '+ secondFeedEntry);
             expect(firstFeedEntry).not.toBe(secondFeedEntry);
         });
     });
