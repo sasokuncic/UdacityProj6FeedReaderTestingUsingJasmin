@@ -41,10 +41,10 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
-        it('pizza menu shown after the first click and hidden after the second one', function() {
-            $('.menu-icon-link').trigger('click');
+        it('pizza menu shown after theirst click and hidden after the second one', function() {
+            $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(false);
-            $('.menu-icon-link').trigger('click');
+            $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
