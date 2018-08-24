@@ -49,7 +49,7 @@ $(function() {
         });
 
     });
-    /* TODO: Write a new test suite named "Initial Entries" */
+
     describe('Initial Entries', function(){
 
         beforeEach(function(done){
@@ -57,9 +57,8 @@ $(function() {
         });
 
         it('feed loaded with at least a single feed entry', function() {
-            let feedEntry = $('.feed .entry');
-            // console.log('Initial Entries: '+ feedEntry[0].innerHTML);
-            // console.log('Initial Entries: '+ feedEntry[1].innerHTML);
+            let feedEntry = $('.feed .entry').html();
+            // console.log('Initial Entries: '+ feedEntry);
             expect(feedEntry.length).toBeGreaterThan(0);
         });
     });
@@ -70,17 +69,17 @@ $(function() {
         let secondFeedEntry = '';
 
         beforeEach(function(done){
+            loadFeed(0);
+            firstFeedEntry = $('.feed .entry').html();
+            // console.log('New Feed Selection: '+ firstFeedEntry);
             loadFeed(1, done);
-            firstFeedEntry = $('.feed .entry');
-            // console.log('New Feed Selection: '+ firstFeedEntry[0].innerHTML);
-            loadFeed(2, done);
-
         });
 
         it('new feed differs from the old one', function() {
-            secondFeedEntry = $('.feed .entry');
-            // console.log('New Feed Selection: '+ secondFeedEntry[0].innerHTML);
-            expect(firstFeedEntry[0].innerHTML).not.toBe(secondFeedEntry[0].innerHTML);
+            secondFeedEntry = $('.feed .entry').html();
+            // console.log('New Feed Selection: '+ secondFeedEntry);
+            expect(firstFeedEntry).not.toBe(secondFeedEntry);
         });
     });
+    
 }());
