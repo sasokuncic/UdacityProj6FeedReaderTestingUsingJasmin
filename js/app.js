@@ -18,17 +18,14 @@ var allFeeds = [
         name: 'HTML5 Rocks',
         url: 'http://feeds.feedburner.com/html5rocks'
     }, {
-        name: 'Linear Digressions',
-        url: 'http://feeds.feedburner.com/udacity-linear-digressions'
+        name: 'Apitherapy News',
+        url: 'http://feeds.feedburner.com/blogspot/FjtSa'
     }, {
         name: 'Računalniške novice (Slovenian)',
         url: 'https://www.racunalniske-novice.com/rss-novice/'
     }, {
         name: 'digisvet (Slovenian)',
         url: 'https://siol.net/feeds/section/digisvet'
-    }, {
-        name: 'Apitherapy News',
-        url: 'http://feeds.feedburner.com/blogspot/FjtSa'
     }
 ];
 
