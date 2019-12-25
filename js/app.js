@@ -19,7 +19,7 @@ var allFeeds = [
         url: 'http://feeds.feedburner.com/html5rocks'
     }, {
         name: 'Apitherapy News',
-        url: 'http://feeds.feedburner.com/blogspot'
+        url: 'http://feeds.feedburner.com/blogspot/'
     }, {
         name: 'Računalniške novice (Slovenian)',
         url: 'https://www.racunalniske-novice.com/rss-novice/'
