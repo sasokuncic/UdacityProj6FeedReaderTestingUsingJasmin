@@ -26,6 +26,9 @@ var allFeeds = [
     }, {
         name: 'digisvet (Slovenian)',
         url: 'https://siol.net/feeds/section/digisvet'
+    }, {
+        name: 'Apitherapy News',
+        url: 'http://feeds.feedburner.com/blogspot/FjtSa'
     }
 ];
 
